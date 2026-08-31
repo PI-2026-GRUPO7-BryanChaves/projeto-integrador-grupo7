@@ -4,6 +4,7 @@ body {
     margin: 20px;
     padding: 0;
     color: black;
+    background-color: #ffefb1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -47,19 +48,21 @@ body {
     font-size: 16px;
     text-align: justify;
     color: black;
+    border: 2px solid #7e9dd8;
+    background-color: #c8d1d9;
     margin: 10px 0;
     padding: 5px;
 }
 
 /* ===================== Estrutura geral (caixas com borda) ===================== */
 .caixa {
-    border: 2px solid red;
+    border: 2px solid #7e9dd8;
     margin: 15px;
     padding: 15px;
 }
 
 .divisor {
-    border: 1px solid red;
+    border: 1px solid #7e9dd8;
     margin: 20px 0;
 }
 
@@ -90,7 +93,7 @@ body {
 
 /* ===================== Figuras / Carrossel ===================== */
 .figura {
-    border: 2px solid red;
+    border: 2px solid #7e9dd8;
     margin: 15px auto;
     padding: 10px;
     text-align: center;
