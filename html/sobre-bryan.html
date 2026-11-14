@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="../css/bryan.css">
+    <title>Sobre Mim — Bryan Douglas Machado Chaves</title>
+    <link rel="stylesheet" href="bryan.css">
+    <script src="tema.js"></script>
 </head>
 
 <body>
 
     <header>
+
+        <h1 class="titulo texto">Bryan Douglas Machado Chaves</h1>
     </header>
 
     <hr class="divisor">
 
-    <nav class="texto">
+    <nav class="texto" aria-label="Menu principal">
         <ul class="menu">
             <li class="item-menu">
-                <a class="link" href="#sobre-nos"></a>
+                <a class="link" href="#sobre-nos">Sobre Mim</a>
             </li>
             <li class="item-menu">
-                <a class="link" href="#onde-vivemos"></a>
+                <a class="link" href="#onde-vivemos">Onde Vivo</a>
             </li>
             <li class="item-menu">
-                <a class="link" href="#tcts"></a>
+                <a class="link" href="#tcts">TCTs</a>
+            </li>
+            <li class="item-menu">
+                <a class="link" href="#creditos">Créditos</a>
+            </li>
+            <li class="item-menu">
+                <a class="link" href="en/bryan.html" lang="en" hreflang="en">English</a>
+            </li>
+            <li class="item-menu">
+                <button type="button" id="botao-tema" class="botao-tema" aria-pressed="false">Modo noturno</button>
             </li>
         </ul>
     </nav>
@@ -33,14 +45,12 @@
 
     <main>
 
-        <!-- ===================== MENU 1: SOBRE NÓS ===================== -->
         <article id="sobre-nos">
 
             <h2 class="titulo texto">Sobre Mim</h2>
 
             <h3 class="titulo texto">Bryan Douglas Machado Chaves</h3>
 
-            <!-- ===================== NASCIMENTO ===================== -->
             <section id="integrante-1-nascimento" class="texto">
 
                 <h4 class="titulo texto">Nascimento</h4>
@@ -60,7 +70,6 @@
 
             </section>
 
-            <!-- ===================== TRAJETÓRIA ESCOLAR ===================== -->
             <section id="integrante-1-trajetoria-escolar" class="texto">
 
                 <h4 class="titulo texto">Trajetória Escolar</h4>
@@ -90,7 +99,6 @@
 
             </section>
 
-            <!-- ===================== FATO HISTÓRICO ===================== -->
             <section id="integrante-1-fato-historico" class="texto">
 
                 <h4 class="titulo texto">Fato Histórico: Independência do Brasil</h4>
@@ -115,7 +123,6 @@
 
             </section>
 
-            <!-- ===================== MOMENTO ATUAL ===================== -->
             <section id="integrante-1-momento-atual" class="texto">
 
                 <h4 class="titulo texto">Momento Atual</h4>
@@ -144,7 +151,6 @@
 
             </section>
 
-            <!-- ===================== PERSPECTIVAS FUTURAS ===================== -->
             <section id="integrante-1-perspectivas-futuras" class="texto">
 
                 <h4 class="titulo texto">Perspectivas Futuras</h4>
@@ -176,6 +182,7 @@
             <div id="integrante-1-carrossel">
 
                 <figure class="figura">
+
                     <figcaption class="legenda"></figcaption>
                 </figure>
 
@@ -187,25 +194,55 @@
 
         <article id="onde-vivemos">
 
-            <h2 class="titulo texto"></h2>
+            <h2 class="titulo texto">Onde Vivo</h2>
 
-            <h3 class="titulo texto"></h3>
+            <h3 class="titulo texto">Toledo, Paraná</h3>
+
             <section id="integrante-1-municipio" class="texto">
-                <h4 class="titulo texto"></h4>
 
-                <p></p>
+                <h4 class="titulo texto">O Município de Toledo</h4>
+
+                <p>
+                    Eu nasci e moro em Toledo, cidade da região Oeste do Paraná. O nome do município vem do Rio
+                    Toledo, que corta o seu território, e quem nasce aqui é chamado de toledano ou toledense. A
+                    história de Toledo é recente se comparada à de outras cidades brasileiras. A região foi
+                    ocupada a partir de 1946, no processo de colonização organizado pela Industrial Madeireira
+                    Colonizadora Rio Paraná S.A., a Maripá. A empresa dividiu e vendeu lotes de terra para
+                    colonos, em grande parte descendentes de alemães e italianos vindos do Rio Grande do Sul e de
+                    Santa Catarina, e foi fundando vilas ao redor da sede. Em 1952, Toledo se tornou município. Com
+                    o crescimento, partes do seu território deram origem a outras cidades da região, como Assis
+                    Chateaubriand, Nova Santa Rosa, Ouro Verde do Oeste e São Pedro do Iguaçu, além de terem
+                    contribuído para a formação de Marechal Cândido Rondon. Hoje, a economia toledana é baseada
+                    principalmente na agropecuária, na agroindústria e na pequena e média indústria. Segundo
+                    estudo publicado pela Unioeste com dados do IBGE, o município tinha cerca de 144 mil
+                    habitantes em 2021 e IDH de 0,768. Vale lembrar que a história oficial de Toledo costuma
+                    destacar a figura dos pioneiros, mas pesquisadores também mostram que existem muitas outras
+                    memórias sobre a formação da cidade, vividas pelos próprios colonos e trabalhadores.
+                </p>
 
             </section>
 
             <section id="integrante-1-bairro-linha" class="texto">
 
-                <h4 class="titulo texto"></h4>
+                <h4 class="titulo texto">O Bairro: Jardim Coopagro</h4>
 
-                <p></p>
+                <p>
+                    Eu moro no Jardim Coopagro, um bairro da zona norte de Toledo. Segundo um estudo da Faculdade
+                    Assis Gurgacz (FAG), ele tem cerca de 8,4 mil habitantes, o que o coloca entre os bairros mais
+                    populosos da cidade. O nome do bairro se confunde com o da Coopagro, uma cooperativa
+                    agroindustrial que fez parte da história da região, e que até já foi tema de uma dissertação de
+                    mestrado em História na Unioeste. Hoje, o bairro reúne moradias, comércio e serviços ligados ao
+                    agronegócio, como o Sindicato Rural de Toledo e agências financeiras voltadas ao setor, na
+                    Avenida Ministro Cirne Lima, uma de suas principais vias. É também na Avenida Ministro Cirne
+                    Lima que fica a Faculdade Assis Gurgacz. Para mim, o que mais marca o Jardim Coopagro é a
+                    presença das escolas: foi nele que estudei na Escola Municipal Carlos Friedrich e no Colégio
+                    Estadual Novo Horizonte, e é nele que a maior parte da minha infância aconteceu.
+                </p>
 
             </section>
 
             <figure class="figura">
+
                 <figcaption class="legenda"></figcaption>
             </figure>
 
@@ -213,40 +250,115 @@
 
         <hr class="divisor">
 
-        <!-- ===================== MENU 3: TCTs ===================== -->
         <article id="tcts">
 
-            <h2 class="titulo texto"></h2>
+            <h2 class="titulo texto">TCTs</h2>
 
             <section id="tct-tema" class="texto">
 
-                <h3 class="titulo texto"></h3>
+                <h3 class="titulo texto">Macroárea Temática: Ciência e Tecnologia</h3>
 
-                <p></p>
+                <p>
+                    Os Temas Contemporâneos Transversais (TCTs) da BNCC reúnem assuntos que fazem parte da vida
+                    das pessoas e que atravessam várias disciplinas. A macroárea sorteada para o nosso grupo foi
+                    Ciência e Tecnologia, que trata do desenvolvimento científico e da inovação. Em Toledo, esse
+                    tema aparece de forma concreta, porque a cidade abriga um parque tecnológico, universidades e
+                    projetos que ligam a pesquisa ao desenvolvimento da região.
+                </p>
 
             </section>
 
-            <!-- Responsabilidade coletiva -->
             <section id="tct-acoes-municipio" class="texto">
 
-                <h3 class="titulo texto"></h3>
-
-                <ul>
-                    <li class="texto"></li>
-                </ul>
-
-            </section>
-
-            <!-- Link(s) para vídeo(s) -->
-            <section id="tct-videos" class="texto">
-
-                <h3 class="titulo texto"></h3>
+                <h3 class="titulo texto">Ações em Toledo</h3>
 
                 <ul>
                     <li>
+                        <strong>Biopark:</strong> o Parque Científico e Tecnológico de Biociências, em Toledo, ocupa
+                        mais de cinco milhões de metros quadrados e é voltado à pesquisa e à inovação. O projeto
+                        nasceu a partir da indústria farmacêutica Prati-Donaduzzi e reúne universidades, como a UFPR
+                        (com o curso de Medicina), a UTFPR, o IFPR e a Unioeste, além da Faculdade e do Colégio
+                        Donaduzzi e de dezenas de empresas.
+                    </li>
+                    <li>
+                        <strong>Embrapa no Biopark:</strong> uma unidade da Embrapa dedicada à pesquisa sobre aves,
+                        suínos e peixes foi instalada no Biopark, o que liga a ciência à principal vocação econômica
+                        da região, o agronegócio.
+                    </li>
+                    <li>
+                        <strong>UTFPR Câmpus Toledo:</strong> a universidade oferece cursos como Engenharia de
+                        Computação e Sistemas para Internet, tem projetos de extensão tecnológicos e mantém o
+                        mestrado profissional em Tecnologias em Biociências, que funciona nas dependências do
+                        Biopark.
+                    </li>
+                    <li>
+                        <strong>Usina do Conhecimento:</strong> a UTFPR e a Prefeitura de Toledo assinaram um termo
+                        de cooperação técnica para a gestão desse espaço de educação e inovação, localizado na
+                        península do Parque Ecológico Diva Paim, com quatro ambientes: Ciência, Lab, Mente e Work,
+                        voltados a áreas como biologia, física e matemática.
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="tct-videos" class="texto">
+
+                <h3 class="titulo texto">Vídeos</h3>
+
+                <ul>
+                    <li>
+
                         <a class="link" href=""></a>
                     </li>
                 </ul>
+
+            </section>
+
+            <section id="tct-cronica" class="texto">
+
+                <h3 class="titulo texto">Crônica: O menino do ônibus</h3>
+
+                <p><em>Por Bryan Douglas Machado Chaves</em></p>
+
+                <p>
+                    Seu Osvaldo dirige o ônibus tem 22 anos e jura que conhece Toledo inteira somente pelo barulho
+                    dos passageiros. Mas naquela manhã de outubro, algo estava diferente.
+                </p>
+
+                <p>
+                    Todo dia, quase 7 horas, subia um menino de onze anos, mochila maior que ele, com uns fios
+                    saindo de dentro. Ele sentava na frente, bem atrás do motorista, e ficava mexendo numa plaquinha,
+                    de língua pra fora.
+                </p>
+
+                <p>— O que é isso aí, rapaz?</p>
+
+                <p>— Um robô, seu Osvaldo. Ainda não anda. Mas vai.</p>
+
+                <p>— E quem te ensinou isso?</p>
+
+                <p>— A escola. De manhã a gente estuda normal, de tarde vai pro laboratório.</p>
+
+                <p>
+                    Seu Osvaldo riu, achando exagero de criança. Só que o menino tinha razão: em 2026, 150
+                    estudantes da rede estadual com altas habilidades frequentam o Colégio Donaduzzi, onde cumprem o
+                    currículo de manhã e, no contraturno, fazem pesquisa, robótica e ciência. Tudo isso dentro do
+                    Biopark, que reúne cerca de 170 empresas e acaba de fazer dez anos. Seu Osvaldo lembrou que,
+                    quando começou naquela linha, ali era só mato e estrada de chão. Ninguém falava em laboratório,
+                    muito menos em robô.
+                </p>
+
+                <p>No ponto final, o menino desceu apressado, a mochila balançando nas costas.</p>
+
+                <p>— Tchau, seu Osvaldo! Semana que vem eu trago ele andando!</p>
+
+                <p>
+                    O motorista ficou olhando para o garoto até ele sumir do seu campo de visão. Depois ajeitou o
+                    retrovisor, deu um sorriso de canto e pensou, meio sem querer: “22 anos levando gente pro futuro
+                    e eu nem sabia.”
+                </p>
+
+                <p>Engatou a primeira e voltou pro ponto inicial. Tinha mais gente esperando.</p>
 
             </section>
 
@@ -256,37 +368,35 @@
 
     <hr class="divisor">
 
-    <!-- ===================== RODAPÉ ===================== -->
     <footer id="creditos" class="rodape texto">
 
-
-        <h2 class="titulo texto"></h2>
+        <h2 class="titulo texto">Créditos</h2>
 
         <p>
-            <br>
-            <br>
-            <br>
+            Bryan Douglas Machado Chaves<br>
+            Instituto Federal do Paraná (IFPR)<br>
         </p>
-        <nav class="texto">
 
-            <h2 class="titulo texto"></h2>
+        <nav class="texto" aria-label="Menu do rodapé">
+
+            <h2 class="titulo texto">Menu</h2>
 
             <ul class="menu">
 
                 <li class="item-menu">
-                    <a class="link" href="#sobre-nos"></a>
+                    <a class="link" href="#sobre-nos">Sobre Mim</a>
                 </li>
 
                 <li class="item-menu">
-                    <a class="link" href="#onde-vivemos"></a>
+                    <a class="link" href="#onde-vivemos">Onde Vivo</a>
                 </li>
 
                 <li class="item-menu">
-                    <a class="link" href="#tcts"></a>
+                    <a class="link" href="#tcts">TCTs</a>
                 </li>
 
                 <li class="item-menu">
-                    <a class="link" href="#creditos"></a>
+                    <a class="link" href="#creditos">Créditos</a>
                 </li>
 
             </ul>
