@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciência e Tecnologia | Toledo/PR</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tema.js"></script>
 </head>
+
 <body>
 
     <header>
-        <h1>Meu Site</h1>
-
-        <nav>
-            <a href="index.html">Início</a>
-
-            <div class="dropdown">
-                <a href="#" class="dropbtn">Sobre Nós ▾</a>
-
-                <div class="dropdown-content">
-                    <a href="html/sobre-bryan.html">Bryan</a>
-                    <a href="html/sobre-nicolas.html">Nicolas</a>
-                    <a href="html/sobre-vinicius.html">Vinicius</a>
-                </div>
-            </div>
-
-            <a href="#contato">Contato</a>
-        </nav>
+        <h1 class="titulo texto">Ciência e Tecnologia</h1>
     </header>
 
-    <main>
-        <h2>Ciência e Tecnologia</h2>
-        <p class="subtitulo">Desenvolvimento científico e inovação na região de Toledo/PR</p>
+    <nav class="texto" aria-label="Menu principal">
+        <ul class="menu">
+            <li class="item-menu">
+                <a class="link" href="index.html">Início</a>
+            </li>
+            <li class="item-menu">
+                <details class="submenu">
+                    <summary class="link">Sobre Nós</summary>
+                    <ul class="submenu-lista">
+                        <li><a class="link" href="html/sobre-bryan.html">Bryan</a></li>
+                        <li><a class="link" href="html/sobre-nicolas.html">Nicolas</a></li>
+                        <li><a class="link" href="html/sobre-vinicius.html">Vinicius</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li class="item-menu">
+                <a class="link" href="#contato">Contato</a>
+            </li>
+            <li class="item-menu">
+                <button type="button" id="botao-tema" class="botao-tema" aria-pressed="false">Modo noturno</button>
+            </li>
+        </ul>
+    </nav>
 
-        <section class="intro">
+    <hr class="divisor">
+
+    <main>
+
+        <h2 class="titulo texto">Desenvolvimento científico e inovação</h2>
+        <p class="subtitulo">Região de referência: Toledo, no oeste do Paraná</p>
+
+        <section class="texto intro">
             <p>Bem-vindo(a)! Este site reúne informações, reflexões e experiências sobre o <strong>desenvolvimento científico e a inovação</strong>, tendo como região de referência <strong>Toledo, no oeste do Paraná</strong>.</p>
 
             <p>A ciência e a tecnologia estão presentes no nosso dia a dia, desde as lavouras e agroindústrias até a saúde, a educação e os serviços digitais. Em Toledo e nos municípios vizinhos, esse movimento é visível. A região é reconhecida pela força do agronegócio e das cooperativas e conta com instituições de ensino superior, centros de pesquisa e empresas que investem em novas soluções. Essa combinação cria um ambiente favorável à geração de conhecimento e à sua aplicação prática.</p>
@@ -40,23 +54,27 @@
             <p>Aqui você vai encontrar conteúdos que mostram como a pesquisa científica se transforma em inovação, de que forma ela impulsiona o desenvolvimento econômico e social e quais são os desafios e oportunidades para o futuro da região. Nosso objetivo é aproximar a ciência da comunidade, valorizar o que é produzido localmente e inspirar novas ideias.</p>
         </section>
 
-        <p class="chamada">Conheça as pessoas da nossa equipe pelo menu Sobre Nós.</p>
+        <p class="texto chamada">Conheça as pessoas da nossa equipe pelo menu <strong>Sobre Nós</strong>.</p>
 
         <section class="secao-dividida">
-    <div class="texto">
-        <h2>A evolução da tecnologia em Toledo</h2>
-        <p>A história de Toledo e do oeste paranaense sempre esteve ligada ao campo. Ao longo das últimas décadas, a modernização da agricultura e da agroindústria, com máquinas mais eficientes, melhoramento de cultivos, fortalecimento das cooperativas e, mais recentemente, ferramentas digitais, transformou a região em um importante polo produtivo. Essa base ajudou a criar uma cultura de investimento em conhecimento e em novas soluções.</p>
-    </div>
+            <div class="texto">
+                <h2>A evolução da tecnologia em Toledo</h2>
+                <p>A história de Toledo e do oeste paranaense sempre esteve ligada ao campo. Ao longo das últimas décadas, a modernização da agricultura e da agroindústria, com máquinas mais eficientes, melhoramento de cultivos, fortalecimento das cooperativas e, mais recentemente, ferramentas digitais, transformou a região em um importante polo produtivo. Essa base ajudou a criar uma cultura de investimento em conhecimento e em novas soluções.</p>
+            </div>
 
-    <div class="foto">
-        <img src="fotodoinicio.webp" alt="foto dos primordios de Toledo" class="aredontamento">
-    </div>
-</section>
+            <div class="foto">
+                <img src="img/foto-inicio.webp" alt="Foto antiga dos primórdios de Toledo" class="aredontamento">
+            </div>
+        </section>
+
     </main>
 
-    <footer id="contato">
-        <p>Contato: seuemail@exemplo.com</p>
+    <hr class="divisor">
+
+    <footer id="contato" class="texto rodape">
+        <p>Contato: <a class="link" href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
     </footer>
 
 </body>
+
 </html>
