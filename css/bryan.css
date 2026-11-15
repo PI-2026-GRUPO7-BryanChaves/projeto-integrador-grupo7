@@ -53,6 +53,10 @@ body {
 .titulo.texto {
     font-size: clamp(1.3rem, 2.5vw, 2.6rem);
     text-align: center;
+    background-color: #E67E22;
+    border: 2px solid #C96A16;
+    color: #FFFFFF;
+    border-radius: 20px;
 }
 
 h4.titulo.texto,
