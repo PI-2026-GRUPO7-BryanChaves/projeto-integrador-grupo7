@@ -4,6 +4,7 @@
     --cor-fundo: #FFFFFF;
     --cor-caixa: #14532D;
     --cor-borda: #E0A526;
+    --cor-titulo: #E0A526;
     --cor-texto: #FFFFFF;
     --cor-link: #FFFFFF;
     --cor-link-destaque: #FFD66B;
@@ -13,6 +14,7 @@
     --cor-botao-texto: #14532D;
     --cor-botao-borda: #14532D;
     --cor-botao-ativo-fundo: #000000;
+    --cor-botao-ativo-titulo: #FFFF00;
     --cor-botao-ativo-texto: #14290F;
 }
 
@@ -35,6 +37,7 @@ body {
 .titulo {
     font-size: clamp(1.3rem, 2.5vw, 2.6rem);
     text-align: center;
+    background-color: var(--cor-titulo);
     color: var(--cor-texto);
     line-height: 1.25;
 }
@@ -53,7 +56,7 @@ body {
 .titulo.texto {
     font-size: clamp(1.3rem, 2.5vw, 2.6rem);
     text-align: center;
-    background-color:  var(--cor-caixa);
+    background-color:  var(--cor-botao-ativo-titulo);
     border: 2px solid var(--cor-borda);
     color: #FFFFFF;
     border-radius: 20px;
