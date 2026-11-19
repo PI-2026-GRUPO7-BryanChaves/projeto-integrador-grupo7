@@ -3,7 +3,8 @@
 :root {
     --cor-fundo: #FFFFFF;
     --cor-caixa: #14532D;
-    --cor-borda: #E0A526;
+    --cor-borda: #C96A16;
+    --cor-titulo: #E67E22;
     --cor-texto: #FFFFFF;
     --cor-link: #FFFFFF;
     --cor-link-destaque: #FFD66B;
@@ -53,8 +54,8 @@ body {
 .titulo.texto {
     font-size: clamp(1.3rem, 2.5vw, 2.6rem);
     text-align: center;
-    background-color: #E67E22;
-    border: 2px solid #C96A16;
+    background-color: var(--cor-titulo);
+    border: 2px solid var(--cor-borda);
     color: #FFFFFF;
     border-radius: 20px;
 }
@@ -243,7 +244,8 @@ body {
 :root[data-tema="escuro"] {
     --cor-fundo: #0A0610;
     --cor-caixa: #3A1658;
-    --cor-borda: #A855D8;
+    --cor-titulo: #A855D8;
+    --cor-borda: #9442c3;
     --cor-texto: #F6EEFC;
     --cor-link: #E9D5FF;
     --cor-link-destaque: #FFFFFF;

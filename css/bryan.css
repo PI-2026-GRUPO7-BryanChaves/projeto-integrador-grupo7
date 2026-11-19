@@ -3,8 +3,8 @@
 :root {
     --cor-fundo: #FFFFFF;
     --cor-caixa: #14532D;
-    --cor-borda: #E0A526;
-    --cor-titulo: #E0A526;
+    --cor-borda: #C96A16;
+    --cor-titulo: #E67E22;
     --cor-texto: #FFFFFF;
     --cor-link: #FFFFFF;
     --cor-link-destaque: #FFD66B;
@@ -14,7 +14,6 @@
     --cor-botao-texto: #14532D;
     --cor-botao-borda: #14532D;
     --cor-botao-ativo-fundo: #000000;
-    --cor-botao-ativo-titulo: #FFFF00;
     --cor-botao-ativo-texto: #14290F;
 }
 
@@ -56,7 +55,7 @@ body {
 .titulo.texto {
     font-size: clamp(1.3rem, 2.5vw, 2.6rem);
     text-align: center;
-    background-color:  var(--cor-botao-ativo-titulo);
+    background-color: var(--cor-titulo);
     border: 2px solid var(--cor-borda);
     color: #FFFFFF;
     border-radius: 20px;
@@ -171,8 +170,9 @@ h3.titulo.texto {
 
 :root[data-tema="escuro"] {
     --cor-fundo: #0A0610;
+    --cor-titulo: #A855D8;
+    --cor-borda: #9442c3;
     --cor-caixa: #3A1658;
-    --cor-borda: #A855D8;
     --cor-texto: #F6EEFC;
     --cor-link: #E9D5FF;
     --cor-link-destaque: #FFFFFF;
