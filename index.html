@@ -1,21 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
- 
+
 <body>
-    <header class="caixa">
-        <h1 class="titulo1">Menu de Navegação</h1>
+        <header>
+        <h1>Nicolas</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Sobre Nós ▾</a>
+
+                <div class="dropdown-content">
+                    <a href="sobre-nicolas.html">Nicolas</a>
+                    <a href="sobre-nicolas.html">Maria</a>
+                    <a href="sobre-nicolas.html">Pedro</a>
+                </div>
+            </div>
+
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
-  <nav>
-  <a href="html/sobre-bryan.html">Bryan Chaves</a>
-  <a href="html/sobre-nicolas.html">Nicolas Bicudo</a>
-  <a href="html/sobre-vinicius.html">Vinicius Caramel</a>
-  </nav>
+    <hr class="divisor">
+    <script>
+    function moverCarrossel(id, direcao) {
+        const galeria = document.getElementById(id);
+        galeria.scrollBy({ left: direcao * galeria.clientWidth, behavior: 'smooth' });
+    }
+</script>
+
+    <!-- Menu de navegação principal: liga às 3 seções (requisito técnico: navegação funcional) -->
+    <nav class="caixa">
+        <ul class="menu">
+            <li class="item-menu"><a class="link" href="#sobre-nos"></a></li>
+            <li class="item-menu"><a class="link" href="#onde-vivemos"></a></li>
+            <li class="item-menu"><a class="link" href="#tcts"></a></li>
+        </ul>
+    </nav>
+    <hr class="divisor">
+
+    <main class="caixa">
+
+        <!-- ===================== MENU 1: SOBRE NÓS ===================== -->
+        <article id="sobre-nos" class="caixa">
+            <h2 class="titulo2">Faz Direito</h2>
+
+            <!-- Responsabilidade individual: repetir este bloco <section class="integrante"> para cada integrante do grupo -->
+            <section id="integrante-3" class="caixa">
+                <h3 class="titulo3">Nicolas Da Luz Almeida Bicudo</h3> <!-- Nome do integrante -->
+
+                <section id="integrante-3-nascimento" class="caixa">
+                    <h4 class="titulo4">Nascimento</h4>
+                    <p class="texto">Esse e o relato de minha mãe sobre meu naceimento<br>  'Segunda o grande dia </p>
+                    <p class="texto">É como foi acordamos cedo para repetir o exame com a Dra Juliana e Adriano. Saimos da clinica e fomos direto para o consutoria da Dra Juliana.<br>Chegando fomos logo atendidos e veio a resposta, que n poderia as esperar e seria naquele dia, eu fiquei muito apavorada, queiria mais um dia mas ela disse que não poderia.<br>Como toda mulher eu queria ficar linda para a chegada do meu bebé. <br>Sair do consutório direto para um salão de beleza,como n tinha muito tempo, almocei dentro do salão, vim para casa e fiquei descansando até a hora, na verdade eu não consegui descançar quiz fazer varias coisas, menos ficar deitada. <br>Recebi a visita da Tati e do Carlos e me derão um lindo presente para o <b>Nicolas.[...]</p>
+                    <p class="texto">Quando você foi tirado, eu fiquei muito preucupada pois não ouvi seu choro, e perguntei para o seu pai "Porque ele não esta chorando"mas não tinha nem um minuto que você tinha saido.<br>Quando voçê chorou foi uma alegria que não tem explicação.'</p>
+                </section>
+
+                <section id="integrante-3-trajetoria-escolar" class="caixa">
+                    <h4 class="titulo4">Trajetória Escolar</h4>
+                    <p class="texto">Meus primeiros contatos com o ambiente escolar aconteceram em 2012, no Santa Sofia, em Garanhus. Lembro que foi nessa escola onde eu fui na primeira vez para uma capela.</p> 
+                    <p class="texto">Entre 2016 e 2020, estudei no CEEDUC. Fui alfabetizado com a professora Daniele, qeu por maior dos meus escandalos nunca desistiu de me ensinar. Em relação ao desempenho, nunca tive dificuldade, os professores eram muitos bons, tinha bastantes amigos e não tinha dificuldade nas materias.</p>
+                    <p class="texto">Do 6º ao 9º ano, continuei a estudar no CEEDUC, ate 2025. A transição para manhã fez com que eu acordasse sempre de mau humor. Nesse meio tempo,comecei a me aprofundar na área de agronomia pois esse era um dos meus sonhos, mas tambem foi a epoca onde eu mais me metia em confusão.</p>
+                    <p class="texto">Agora em 2026, eu estou no IFPR em um curso integrado ao 1º de técnico em informatica para internet.</p>
+                </section>
+
+                <section id="integrante-3-fato-historico" class="caixa">
+                    <h4 class="titulo4">Fato Histórico</h4>
+                    <p class="texto">Um dia antes do meu nascimento, em 5 de dezembro de 2010, o Fluminense venceu o Guarani por 1 a 0 na última rodada do Campeonato Brasileiro e conquistou o título nacional.</p>
+                    <p class="texto">Foi um título muito esperado pela torcida, pois o clube não ganhava o Brasileirão desde 1984, ou seja, havia 26 anos.</p>
+                    <p class="texto">Eu nasci no dia 6 de dezembro de 2010, uma segunda-feira, quando a comemoração da conquista ainda estava acontecendo.</p>
+                    <p class="texto">Não existe relação direta entre os dois acontecimentos, mas gosto de pensar nessa coincidência: cheguei ao mundo na semana em que o Fluminense voltou a ser campeão brasileiro.</p>
+                    </section>
+
+                <section id="integrante-3-momento-atual" class="caixa">
+                    <h4 class="titulo4">Momento Atual</h4>
+                    <p class="texto">Nesse momento eu quero focar nos meus estudos, porque eu sinceramente não sou tão bom em nenhuma das novas materias do curso e já percebi que vo teque dobra os estudos e isso não e tão legal.</p>
+                    <p class="texto">Também quero aprender phyton, acho qeu vou deixar pra fazer nas ferias e começar um treino de pulo pra eu pode começar a dunca.</p>
+                    <p class="texto">Sinceramente não tem muito se passando nesse momento, meus maiores planos estão um pouco mais a frente, mas eu achor que o maior neste momento atual tende ser de começar a estudar pro ENEM, pra eu não penar tanto um pouco mais pra frente</p>
+                    <p class="texto"></p>
+                </section>
+
+                <section id="integrante-3-perspectivas-futuras" class="caixa">
+                    <h4 class="titulo4">Perspectivas Futuras</h4>
+                    <p class="texto">Minha Perspectivas futuras são poucas, mas eu considero elas as mais importantes. <br> eu quero aprneder e dominar uma parte de phyton, continuar os estudos para o ENEM,e termina o ensino medio. depois eu quero entra em uma faculdade, minha principal expectativa e a USP ou UFRJ, mas duvido que vá acontecer. quero iniciar a careira apos terminar um doutorado pra ja começar bem como trabalhador e quero ter minha propria casa bem isolado das pessoas pra pode curtir a vida. </p>
+                    <p class="texto">Acho que o mais complicado de se concluir será a iniciação da faculdade e aprovação do ENEM, pois não tenho tanta certeza que irei passa. Isso em parte se deve para um dos cursos, esse sendo medicina.</p>
+                    <p class="texto">Esses são minhas prncipais perspctiva futuras, acho que a vida pode me surprende, porém se isso não acontecer espero que sejam essas as coisas que me aconteçam.</p>
+                    <p class="texto"></p>
+                </section>
+
+                <!-- Carrossel de imagens (requisito técnico) -->
+                <div id="integrante-3-carrossel" class="caixa">
+    <figure class="figura">    
+        <div class="galeria" id="galeria-3">
+            <img src="IFPR.png" alt="USP">
+            <img src="phyton.png" alt="Logo do Python">
+            <img src="UFRJ.jpg" alt="UFRJ">
+            <img src="USP.webp" alt="USP">
+            <img src="medicina.jpg" alt="USP">
+            
+        </div>
+        
+    </figure>
+    <div class="controles">
+        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', -1)" aria-label="Imagem anterior">&#10094;</button>
+        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', 1)" aria-label="Próxima imagem">&#10095;</button>
+    </div>
+</div>
+            </section>
+            <!-- Fim do bloco repetível por integrante -->
+
+        </article>
+        <hr class="divisor">
+
+        <!-- ===================== MENU 2: ONDE VIVEMOS ===================== -->
+        <article id="onde-vivemos" class="caixa">
+            <h2 class="titulo2"></h2>
+
+            <!-- Responsabilidade individual: repetir este bloco <section class="integrante"> para cada integrante do grupo -->
+            <section id="integrante-3-local" class="caixa">
+                <h3 class="titulo3"></h3> <!-- Nome do integrante -->
+
+                <section id="integrante-3-municipio" class="caixa">
+                    <h4 class="titulo4"></h4> <!-- Município -->
+                    <p class="texto"></p> <!-- Fatos históricos, geográficos, culturais, curiosidades -->
+                </section>
+
+                <section id="integrante-3-bairro-linha" class="caixa">
+                    <h4 class="titulo4"></h4> <!-- Bairro / Linha -->
+                    <p class="texto"></p>
+                </section>
+
+                <figure class="figura">
+                    <figcaption class="legenda"></figcaption>
+                </figure>
+            </section>
+            <!-- Fim do bloco repetível por integrante -->
+
+        </article>
+        <hr class="divisor">
+
+        <!-- ===================== MENU 3: TCTs ===================== -->
+        <article id="tcts" class="caixa">
+            <h2 class="titulo2"></h2>
+
+            <section id="tct-tema" class="caixa">
+                <h3 class="titulo3"></h3> <!-- Tema/área sorteada entre os 6 TCTs -->
+                <p class="texto"></p> <!-- Apresentação do tema -->
+            </section>
+
+            <!-- Responsabilidade coletiva -->
+            <section id="tct-acoes-municipio" class="caixa">
+                <h3 class="titulo3"></h3> <!-- Ações/atividades executadas no município -->
+                <ul>
+                    <li class="texto"></li>
+                </ul>
+            </section>
+
+            <!-- Link(s) para vídeo(s) incorporado(s) ou referenciado(s) (requisito técnico) -->
+            <section id="tct-videos" class="caixa">
+                <h3 class="titulo3"></h3>
+                <ul>
+                    <li><a class="link" href=""></a></li>
+                </ul>
+            </section>
+
+        </article>
+
+    </main>
+    <hr class="divisor">
+
+    <footer id="creditos" class="caixa rodape">
+        <section>
+            <h2 class="titulo2"></h2>
+            <p class="texto">
+                <br>
+                <br>
+                <br>
+            </p>
+        </section>
+        <nav>
+            <h2 class="titulo2"></h2>
+            <ul class="menu">
+                <li class="item-menu"><a class="link" href="#sobre-nos"></a></li>
+                <li class="item-menu"><a class="link" href="#onde-vivemos"></a></li>
+                <li class="item-menu"><a class="link" href="#tcts"></a></li>
+                <li class="item-menu"><a class="link" href="#creditos"></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
