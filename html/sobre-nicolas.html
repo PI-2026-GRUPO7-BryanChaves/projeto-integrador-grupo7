@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
 
 <body>
@@ -35,13 +35,6 @@
 </header>
 
     <hr class="divisor">
-
-    <script>
-        function moverCarrossel(id, direcao) {
-            const galeria = document.getElementById(id);
-            galeria.scrollBy({ left: direcao * galeria.clientWidth, behavior: 'smooth' });
-        }
-    </script>
 
     <!-- Menu de navegação principal: liga às 3 seções (requisito técnico: navegação funcional) -->
     <nav class="caixa">
@@ -294,46 +287,7 @@
             </ul>
         </nav>
     </footer>
-    <script>
-(function () {
-    var raiz = document.documentElement;
-
-    var botao = document.getElementById('botao-tema');
-
-    // Recupera o tema salvo
-    try {
-        if (localStorage.getItem('tema') === 'escuro') {
-            raiz.setAttribute('data-tema', 'escuro');
-        }
-    } catch (erro) {}
-
-    if (!botao) return;
-
-    function atualizar() {
-        var escuro = raiz.getAttribute('data-tema') === 'escuro';
-
-        botao.textContent = escuro ? '☀️ Tema Claro' : '🌙 Tema Escuro';
-        botao.setAttribute('aria-pressed', escuro);
-    }
-
-    botao.addEventListener('click', function () {
-        var escuro = raiz.getAttribute('data-tema') === 'escuro';
-
-        if (escuro) {
-            raiz.removeAttribute('data-tema');
-        } else {
-            raiz.setAttribute('data-tema', 'escuro');
-        }
-
-        try {
-            localStorage.setItem('tema', escuro ? 'claro' : 'escuro');
-        } catch (erro) {}
-
-        atualizar();
-    });
-
-    atualizar();
-})();
+    <script src="../js/nicolas.js">
 </script>
 </body>
 
