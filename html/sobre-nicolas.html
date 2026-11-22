@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,175 +6,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <header class="caixa">
+<header>
+    <h1>Nicolas</h1>
 
-    </header>
+    <nav>
+        <a href="index.html">Início</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Sobre Nós ▾</a>
+
+            <div class="dropdown-content">
+                <a href="sobre-nicolas.html">Nicolas</a>
+                <a href="sobre-bryan.html">Bryan</a>
+                <a href="sobre-vinicius.html">Vinicius</a>
+            </div>
+        </div>
+
+        <a href="#contato">Contato</a>
+
+        <button id="botao-tema" type="button" aria-label="Alternar tema">
+            🌙 Tema Escuro
+        </button>
+    </nav>
+</header>
+
     <hr class="divisor">
 
-   <nav class="texto" aria-label="Menu principal">
-        
-        <ul class="menu"> 
-            <li class="item-menu">
-                <a class="link" href="../index.html">Início</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#sobre-nos">Sobre Mim</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#onde-vivemos">Onde Vivo</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#tcts">TCTs</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#cronica">Crônica</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#creditos">Créditos</a>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="../en/sobre-nicolas.html" lang="en" hreflang="en">English</a>
-            </li>
-            <li class="item-menu">
-                <button type="button" id="botao-tema" class="botao-tema" aria-pressed="false">Modo noturno</button>
-            </li>
+    <script>
+        function moverCarrossel(id, direcao) {
+            const galeria = document.getElementById(id);
+            galeria.scrollBy({ left: direcao * galeria.clientWidth, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Menu de navegação principal: liga às 3 seções (requisito técnico: navegação funcional) -->
+    <nav class="caixa">
+        <ul class="menu">
+            <li class="item-menu"><a class="link" href="#sobre-nos"></a></li>
+            <li class="item-menu"><a class="link" href="#onde-vivemos"></a></li>
+            <li class="item-menu"><a class="link" href="#tcts"></a></li>
         </ul>
     </nav>
+
     <hr class="divisor">
 
     <main class="caixa">
 
         <!-- ===================== MENU 1: SOBRE NÓS ===================== -->
         <article id="sobre-nos" class="caixa">
-            <h2 class="titulo2">Faz Direito</h2>
+            <h2 class="titulo2">Sobre mim</h2>
 
-            <!-- Responsabilidade individual: repetir este bloco <section class="integrante"> para cada integrante do grupo -->
             <section id="integrante-3" class="caixa">
-                <h3 class="titulo3">Nicolas Da Luz Almeida Bicudo</h3> <!-- Nome do integrante -->
+                <h3 class="titulo3">Nicolas Da Luz Almeida Bicudo</h3>
 
                 <section id="integrante-3-nascimento" class="caixa">
                     <h4 class="titulo4">Nascimento</h4>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
+
+                    <p class="texto">
+                        Este é o relato de minha mãe sobre meu nascimento:
+                        <br>'Segunda-feira, o grande dia.
+                    </p>
+
+                    <p class="texto">
+                        E foi assim: acordamos cedo para repetir o exame com a Dra. Juliana e Adriano. Saímos da clínica e fomos direto para o consultório da Dra. Juliana.
+                        <br>Chegando lá, fomos logo atendidos e veio a resposta que não podíamos mais esperar: seria naquele dia. Eu fiquei muito apavorada, queria mais um dia, mas ela disse que não poderia.
+                        <br>Como toda mulher, eu queria ficar linda para a chegada do meu bebê. Saí do consultório direto para um salão de beleza. Como não tinha muito tempo, almocei dentro do salão, vim para casa e fiquei descansando até a hora. Na verdade, eu não consegui descansar, quis fazer várias coisas, menos ficar deitada.
+                        <br>Recebi a visita da Tati e do Carlos, que me deram um lindo presente para o <b>Nicolas.</b> [...]
+                    </p>
+
+                    <p class="texto">
+                        Quando você foi retirado, eu fiquei muito preocupada, pois não ouvi seu choro, e perguntei para o seu pai: "Por que ele não está chorando?". Mas não tinha nem um minuto que você tinha saído.
+                        <br>Quando você chorou, foi uma alegria que não tem explicação.'
+                    </p>
                 </section>
 
                 <section id="integrante-3-trajetoria-escolar" class="caixa">
                     <h4 class="titulo4">Trajetória Escolar</h4>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
+
+                    <p class="texto">
+                        Meus primeiros contatos com o ambiente escolar aconteceram em 2012, no Santa Sofia, em Garanhuns. Lembro que foi nessa escola que fui pela primeira vez a uma capela.
+                    </p>
+
+                    <p class="texto">
+                        Entre 2016 e 2020, estudei no CEEDUC. Fui alfabetizado pela professora Daniele, que, apesar dos meus escândalos, nunca desistiu de me ensinar. Em relação ao desempenho, nunca tive dificuldades. Os professores eram muito bons, tinha bastante amigos e não tinha dificuldade nas matérias.
+                    </p>
+
+                    <p class="texto">
+                        Do 6º ao 9º ano, continuei estudando no CEEDUC, até 2025. A transição para o período da manhã fez com que eu acordasse sempre de mau humor. Nesse meio-tempo, comecei a me aprofundar na área de agronomia, pois esse era um dos meus sonhos. Mas também foi a época em que eu mais me metia em confusão.
+                    </p>
+
+                    <p class="texto">
+                        Agora, em 2026, estou no IFPR, em um curso integrado ao 1º ano do técnico em Informática para Internet.
+                    </p>
                 </section>
 
                 <section id="integrante-3-fato-historico" class="caixa">
                     <h4 class="titulo4">Fato Histórico</h4>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
+
+                    <p class="texto">
+                        Um dia antes do meu nascimento, em 5 de dezembro de 2010, o Fluminense venceu o Guarani por 1 a 0 na última rodada do Campeonato Brasileiro e conquistou o título nacional.
+                    </p>
+
+                    <p class="texto">
+                        Foi um título muito esperado pela torcida, pois o clube não ganhava o Brasileirão desde 1984, ou seja, havia 26 anos.
+                    </p>
+
+                    <p class="texto">
+                        Eu nasci no dia 6 de dezembro de 2010, uma segunda-feira, quando a comemoração da conquista ainda estava acontecendo.
+                    </p>
+
+                    <p class="texto">
+                        Não existe relação direta entre os dois acontecimentos, mas gosto de pensar nessa coincidência: cheguei ao mundo na semana em que o Fluminense voltou a ser campeão brasileiro.
+                    </p>
                 </section>
 
                 <section id="integrante-3-momento-atual" class="caixa">
                     <h4 class="titulo4">Momento Atual</h4>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
+
+                    <p class="texto">
+                        Nesse momento, quero focar nos meus estudos, porque, sinceramente, não sou tão bom em nenhuma das novas matérias do curso e já percebi que vou ter que dobrar os estudos, e isso não é tão legal.
+                    </p>
+
+                    <p class="texto">
+                        Também quero aprender Python. Acho que vou deixar para fazer isso nas férias e começar um treino de salto para poder começar a dançar.
+                    </p>
+
+                    <p class="texto">
+                        Sinceramente, não tem muito acontecendo nesse momento. Meus maiores planos estão um pouco mais à frente, mas acho que o maior objetivo neste momento deve ser começar a estudar para o ENEM, para não penar tanto um pouco mais para frente.
+                    </p>
                 </section>
 
                 <section id="integrante-3-perspectivas-futuras" class="caixa">
                     <h4 class="titulo4">Perspectivas Futuras</h4>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
-                    <p class="texto"></p>
+
+                    <p class="texto">
+                        Minhas perspectivas futuras são poucas, mas considero-as as mais importantes.
+                        <br>Eu quero aprender e dominar uma parte de Python, continuar os estudos para o ENEM e terminar o ensino médio. Depois, quero entrar em uma faculdade. Minhas principais expectativas são a USP ou a UFRJ, mas duvido que isso vá acontecer. Quero iniciar minha carreira após terminar um doutorado, para já começar bem como trabalhador, e quero ter minha própria casa, bem isolada das pessoas, para poder curtir a vida.
+                    </p>
+
+                    <p class="texto">
+                        Acho que o mais complicado de se concluir será o ingresso na faculdade e a aprovação no ENEM, pois não tenho tanta certeza de que irei passar. Isso, em parte, se deve a um dos cursos que pretendo fazer, sendo ele Medicina.
+                    </p>
+
+                    <p class="texto">
+                        Essas são minhas principais perspectivas futuras. Acho que a vida pode me surpreender, porém, se isso não acontecer, espero que sejam essas as coisas que aconteçam comigo.
+                    </p>
                 </section>
 
-                <!-- Carrossel de imagens (requisito técnico) -->
+                <!-- Carrossel de imagens -->
                 <div id="integrante-3-carrossel" class="caixa">
                     <figure class="figura">
-                        <figcaption class="legenda"></figcaption>
+                        <div class="galeria" id="galeria-3">
+                            <img src="IFPR.png" alt="IFPR">
+                            <img src="phyton.png" alt="Logo do Python">
+                            <img src="UFRJ.jpg" alt="UFRJ">
+                            <img src="USP.webp" alt="USP">
+                            <img src="medicina.jpg" alt="Medicina">
+                        </div>
                     </figure>
+
+                    <div class="controles">
+                        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', -1)" aria-label="Imagem anterior">&#10094;</button>
+                        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', 1)" aria-label="Próxima imagem">&#10095;</button>
+                    </div>
                 </div>
             </section>
-            <!-- Fim do bloco repetível por integrante -->
-
         </article>
+
         <hr class="divisor">
 
         <!-- ===================== MENU 2: ONDE VIVEMOS ===================== -->
         <article id="onde-vivemos" class="caixa">
-            <h2 class="titulo2"></h2>
+            <h2 class="titulo2">Minha cidade</h2>
 
-            <!-- Responsabilidade individual: repetir este bloco <section class="integrante"> para cada integrante do grupo -->
             <section id="integrante-3-local" class="caixa">
-                <h3 class="titulo3"></h3> <!-- Nome do integrante -->
+                <h3 class="titulo3">Nicolas da Luz Almeida Bicudo</h3>
 
                 <section id="integrante-3-municipio" class="caixa">
-                    <h4 class="titulo4"></h4> <!-- Município -->
-                    <p class="texto"></p> <!-- Fatos históricos, geográficos, culturais, curiosidades -->
+                    <h4 class="titulo4">Palotina</h4>
+
+                    <p class="texto">Alguns fatos sobre Palotina são:</p>
+
+                    <div style="padding: 7px;">
+                        <ul>
+                            <li>O povoado começou como distrito, com o nome de Vila Palotina, criado em 1954 e subordinado ao município de Guaíra.</li>
+
+                            <li>Ao lado, existia a Vila Maripá, que foi unida à Vila Palotina para formar o novo município. A Maripá era a colonizadora que também ocupou Toledo e outras cidades da região.</li>
+
+                            <li>A emancipação veio pela Lei Estadual nº 4.245, de 25 de julho de 1960.</li>
+
+                            <li>A colonização foi uma parceria entre empresa e Igreja: a colonizadora buscou uma parceria com os Padres Palotinos. Os padres eram do Rio Grande do Sul e ajudaram a atrair colonos para a região.</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section id="integrante-3-bairro-linha" class="caixa">
-                    <h4 class="titulo4"></h4> <!-- Bairro / Linha -->
-                    <p class="texto"></p>
+                    <h4 class="titulo4">União</h4>
+
+                    <p class="texto">
+                        Moro no bairro União desde 2017. Ele é um bairro tranquilo e não há tantos acidentes. Sua localização é perto do centro (como tudo nessa cidade), mas acredito que seja um ótimo bairro.
+                    </p>
                 </section>
-
-                <figure class="figura">
-                    <figcaption class="legenda"></figcaption>
-                </figure>
             </section>
-            <!-- Fim do bloco repetível por integrante -->
-
         </article>
+
         <hr class="divisor">
 
         <!-- ===================== MENU 3: TCTs ===================== -->
-        <article id="tcts" class="caixa">
-            <h2 class="titulo2"></h2>
+        <article id="tcts" class="caixa" style="text-align: center;">
+               <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/NtjASyaznnI"
+    title="Vídeo do YouTube"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
 
-            <section id="tct-tema" class="caixa">
-                <h3 class="titulo3"></h3> <!-- Tema/área sorteada entre os 6 TCTs -->
-                <p class="texto"></p> <!-- Apresentação do tema -->
-            </section>
-
-            <!-- Responsabilidade coletiva -->
-            <section id="tct-acoes-municipio" class="caixa">
-                <h3 class="titulo3"></h3> <!-- Ações/atividades executadas no município -->
-                <ul>
-                    <li class="texto"></li>
-                </ul>
-            </section>
-
-            <!-- Link(s) para vídeo(s) incorporado(s) ou referenciado(s) (requisito técnico) -->
-            <section id="tct-videos" class="caixa">
-                <h3 class="titulo3"></h3>
-                <ul>
-                    <li><a class="link" href=""></a></li>
-                </ul>
-            </section>
-
-        </article>
- <section id="cronica" class="texto">
+        <div class="layout">
+            <section id="cronica" class="texto cronica">
 
                 <h3 class="titulo texto">Crônica: O menino do ônibus</h3>
 
                 <p><em>Por Bryan Douglas Machado Chaves</em></p>
 
                 <p>
-                    Seu Osvaldo dirige o ônibus tem 22 anos e jura que conhece Toledo inteira somente pelo barulho
-                    dos passageiros. Mas naquela manhã de outubro, algo estava diferente.
+                    Seu Osvaldo dirige o ônibus há 22 anos e jura que conhece Toledo inteira somente pelo barulho dos passageiros. Mas, naquela manhã de outubro, algo estava diferente.
                 </p>
 
                 <p>
-                    Todo dia, quase 7 horas, subia um menino de onze anos, mochila maior que ele, com uns fios
-                    saindo de dentro. Ele sentava na frente, bem atrás do motorista, e ficava mexendo numa plaquinha,
-                    de língua pra fora.
+                    Todo dia, quase às 7 horas, subia um menino de onze anos, com uma mochila maior que ele e alguns fios saindo de dentro. Ele sentava na frente, bem atrás do motorista, e ficava mexendo numa plaquinha, com a língua para fora.
                 </p>
 
                 <p>— O que é isso aí, rapaz?</p>
@@ -182,32 +248,29 @@
 
                 <p>— E quem te ensinou isso?</p>
 
-                <p>— A escola. De manhã a gente estuda normal, de tarde vai pro laboratório.</p>
+                <p>— A escola. De manhã a gente estuda normalmente, e à tarde vai para o laboratório.</p>
 
                 <p>
-                    Seu Osvaldo riu, achando exagero de criança. Só que o menino tinha razão: em 2026, 150
-                    estudantes da rede estadual com altas habilidades frequentam o Colégio Donaduzzi, onde cumprem o
-                    currículo de manhã e, no contraturno, fazem pesquisa, robótica e ciência. Tudo isso dentro do
-                    Biopark, que reúne cerca de 170 empresas e acaba de fazer dez anos. Seu Osvaldo lembrou que,
-                    quando começou naquela linha, ali era só mato e estrada de chão. Ninguém falava em laboratório,
-                    muito menos em robô.
+                    Seu Osvaldo riu, achando exagero de criança. Só que o menino tinha razão: em 2026, 150 estudantes da rede estadual com altas habilidades frequentam o Colégio Donaduzzi, onde cumprem o currículo de manhã e, no contraturno, fazem pesquisa, robótica e ciência. Tudo isso dentro do Biopark, que reúne cerca de 170 empresas e acaba de fazer dez anos. Seu Osvaldo lembrou que, quando começou naquela linha, ali era só mato e estrada de chão. Ninguém falava em laboratório, muito menos em robô.
                 </p>
 
-                <p>No ponto final, o menino desceu apressado, a mochila balançando nas costas.</p>
+                <p>No ponto final, o menino desceu apressado, com a mochila balançando nas costas.</p>
 
                 <p>— Tchau, seu Osvaldo! Semana que vem eu trago ele andando!</p>
 
                 <p>
-                    O motorista ficou olhando para o garoto até ele sumir do seu campo de visão. Depois ajeitou o
-                    retrovisor, deu um sorriso de canto e pensou, meio sem querer: “22 anos levando gente pro futuro
-                    e eu nem sabia.”
+                    O motorista ficou olhando para o garoto até ele sumir do seu campo de visão. Depois, ajeitou o retrovisor, deu um sorriso de canto e pensou, meio sem querer: “22 anos levando gente para o futuro e eu nem sabia.”
                 </p>
 
-                <p>Engatou a primeira e voltou pro ponto inicial. Tinha mais gente esperando.</p>
+                <p>Engatou a primeira e voltou ao ponto inicial. Tinha mais gente esperando.</p>
 
             </section>
 
+            <img src="motorista.jpg" alt="Motorista de ônibus" style="border-radius: 13px;">
+        </div>
+
     </main>
+
     <hr class="divisor">
 
     <footer id="creditos" class="caixa rodape">
@@ -219,16 +282,59 @@
                 <br>
             </p>
         </section>
+
         <nav>
             <h2 class="titulo2"></h2>
             <ul class="menu">
-                <li class="item-menu"><a class="link" href="#sobre-nos"></a></li>
-                <li class="item-menu"><a class="link" href="#onde-vivemos"></a></li>
-                <li class="item-menu"><a class="link" href="#tcts"></a></li>
-                <li class="item-menu"><a class="link" href="#creditos"></a></li>
+                <li class="item-menu"><a class="link" href="#sobre-nos">Sobre mim</a></li>
+                <li class="item-menu"><a class="link" href="#onde-vivemos">Onde vivo</a></li>
+                <li class="item-menu"><a class="link" href="#tcts">Video</a></li>
+                <li class="item-menu"><a class="link" href="#creditos">Créditos</a></li>
+                <li class="item-menu"><a class="link" href="#cronica">Crônica</a></li>
             </ul>
         </nav>
     </footer>
+    <script>
+(function () {
+    var raiz = document.documentElement;
+
+    var botao = document.getElementById('botao-tema');
+
+    // Recupera o tema salvo
+    try {
+        if (localStorage.getItem('tema') === 'escuro') {
+            raiz.setAttribute('data-tema', 'escuro');
+        }
+    } catch (erro) {}
+
+    if (!botao) return;
+
+    function atualizar() {
+        var escuro = raiz.getAttribute('data-tema') === 'escuro';
+
+        botao.textContent = escuro ? '☀️ Tema Claro' : '🌙 Tema Escuro';
+        botao.setAttribute('aria-pressed', escuro);
+    }
+
+    botao.addEventListener('click', function () {
+        var escuro = raiz.getAttribute('data-tema') === 'escuro';
+
+        if (escuro) {
+            raiz.removeAttribute('data-tema');
+        } else {
+            raiz.setAttribute('data-tema', 'escuro');
+        }
+
+        try {
+            localStorage.setItem('tema', escuro ? 'claro' : 'escuro');
+        } catch (erro) {}
+
+        atualizar();
+    });
+
+    atualizar();
+})();
+</script>
 </body>
 
 </html>
