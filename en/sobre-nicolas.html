@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+<header>
+    <h1>Nicolas</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn">About Us ▾</a>
+
+            <div class="dropdown-content">
+                <a href="sobre-nicolas.html">Nicolas</a>
+                <a href="sobre-bryan.html">Bryan</a>
+                <a href="sobre-vinicius.html">Vinicius</a>
+            </div>
+        </div>
+
+        <a href="#contato">Contact</a>
+
+        <button id="botao-tema" type="button" aria-label="Toggle theme">
+            🌙 Dark Theme
+        </button>
+    </nav>
+</header>
+
+<hr class="divisor">
+
+<script>
+    function moverCarrossel(id, direcao) {
+        const galeria = document.getElementById(id);
+        galeria.scrollBy({ left: direcao * galeria.clientWidth, behavior: 'smooth' });
+    }
+</script>
+
+<!-- Main navigation menu: links to the 3 sections (technical requirement: functional navigation) -->
+<nav class="caixa">
+    <ul class="menu">
+        <li class="item-menu"><a class="link" href="#sobre-nos"></a></li>
+        <li class="item-menu"><a class="link" href="#onde-vivemos"></a></li>
+        <li class="item-menu"><a class="link" href="#tcts"></a></li>
+    </ul>
+</nav>
+
+<hr class="divisor">
+
+<main class="caixa">
+
+    <!-- ===================== MENU 1: ABOUT US ===================== -->
+    <article id="sobre-nos" class="caixa">
+        <h2 class="titulo2">About Me</h2>
+
+        <section id="integrante-3" class="caixa">
+            <h3 class="titulo3">Nicolas Da Luz Almeida Bicudo</h3>
+
+            <section id="integrante-3-nascimento" class="caixa">
+                <h4 class="titulo4">Birth</h4>
+
+                <p class="texto">
+                    This is my mother's account of my birth:
+                    <br>'Monday, the big day.
+                </p>
+
+                <p class="texto">
+                    And this is how it happened: we woke up early to repeat the test with Dr. Juliana and Adriano. We left the clinic and went straight to Dr. Juliana's office.
+                    <br>As soon as we arrived, we were seen, and then came the answer we could no longer put off: it would happen that very day. I was terrified and wanted one more day, but she said that wasn't possible.
+                    <br>Like any woman, I wanted to look beautiful for my baby's arrival. I went straight from the doctor's office to a beauty salon. Since I didn't have much time, I had lunch at the salon, came home, and rested until it was time. Actually, I couldn't rest; I wanted to do everything except lie down.
+                    <br>Tati and Carlos came to visit and gave <b>Nicolas</b> a lovely gift. [...]
+                </p>
+
+                <p class="texto">
+                    When you were delivered, I was very worried because I couldn't hear you crying, so I asked your father, "Why isn't he crying?" But not even a minute had passed since you were born.
+                    <br>When you cried, it was a joy beyond words.'
+                </p>
+            </section>
+
+            <section id="integrante-3-trajetoria-escolar" class="caixa">
+                <h4 class="titulo4">Educational Background</h4>
+
+                <p class="texto">
+                    My first experiences in a school environment took place in 2012, at Santa Sofia School, in Garanhuns. I remember that this was the school where I first visited a chapel.
+                </p>
+
+                <p class="texto">
+                    Between 2016 and 2020, I studied at CEEDUC. I learned to read and write with teacher Daniele, who never gave up teaching me, despite my tantrums. I never had any academic difficulties. The teachers were very good, I had many friends, and I had no trouble with the subjects.
+                </p>
+
+                <p class="texto">
+                    From 6th to 9th grade, I continued studying at CEEDUC, until 2025. Switching to the morning shift meant that I was always waking up in a bad mood. During that time, I began to explore the field of agronomy, since it was one of my dreams. But it was also the period when I got into the most trouble.
+                </p>
+
+                <p class="texto">
+                    Now, in 2026, I attend IFPR, where I am in the first year of a technical high school program in Internet Computing.
+                </p>
+            </section>
+
+            <section id="integrante-3-fato-historico" class="caixa">
+                <h4 class="titulo4">Historical Event</h4>
+
+                <p class="texto">
+                    One day before I was born, on December 5, 2010, Fluminense defeated Guarani 1–0 in the final round of the Brazilian Championship and won the national title.
+                </p>
+
+                <p class="texto">
+                    It was a long-awaited title for the fans, because the club had not won the Brazilian Championship since 1984 — a 26-year wait.
+                </p>
+
+                <p class="texto">
+                    I was born on December 6, 2010, a Monday, while the celebrations for the championship were still going on.
+                </p>
+
+                <p class="texto">
+                    There is no direct connection between the two events, but I like thinking about this coincidence: I came into the world during the week Fluminense became Brazilian champions again.
+                </p>
+            </section>
+
+            <section id="integrante-3-momento-atual" class="caixa">
+                <h4 class="titulo4">Current Situation</h4>
+
+                <p class="texto">
+                    Right now, I want to focus on my studies because, honestly, I'm not very good at any of the new subjects in my course. I've already realized that I'll have to study twice as hard, and that's not much fun.
+                </p>
+
+                <p class="texto">
+                    I also want to learn Python. I think I'll leave that for the school holidays and start practicing jumps so I can begin dancing.
+                </p>
+
+                <p class="texto">
+                    Honestly, not much is happening at the moment. My biggest plans are still a little further ahead, but I think my main goal right now should be to start preparing for the ENEM, Brazil's national high school exam, so I won't struggle as much later on.
+                </p>
+            </section>
+
+            <section id="integrante-3-perspectivas-futuras" class="caixa">
+                <h4 class="titulo4">Future Plans</h4>
+
+                <p class="texto">
+                    I don't have many plans for the future, but I consider them the most important ones.
+                    <br>I want to learn and master some Python, continue preparing for the ENEM, and finish high school. After that, I want to go to university. My main hopes are to attend USP or UFRJ, although I doubt that will happen. I want to start my career after completing a PhD, so I can begin my professional life on a strong footing. I also want to have my own house, somewhere quite far away from other people, so I can enjoy life.
+                </p>
+
+                <p class="texto">
+                    I think the hardest goals will be getting into university and passing the ENEM, because I'm not entirely sure I'll succeed. This is partly because one of the degrees I'm considering is Medicine.
+                </p>
+
+                <p class="texto">
+                    These are my main plans for the future. I think life may surprise me, but if it doesn't, I hope these are the things that happen to me.
+                </p>
+            </section>
+
+            <!-- Image carousel -->
+            <div id="integrante-3-carrossel" class="caixa">
+                <figure class="figura">
+                    <div class="galeria" id="galeria-3">
+                        <img src="IFPR.png" alt="IFPR">
+                        <img src="phyton.png" alt="Python logo">
+                        <img src="UFRJ.jpg" alt="UFRJ">
+                        <img src="USP.webp" alt="USP">
+                        <img src="medicina.jpg" alt="Medicine">
+                    </div>
+                </figure>
+
+                <div class="controles">
+                    <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', -1)" aria-label="Previous image">&#10094;</button>
+                    <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', 1)" aria-label="Next image">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <hr class="divisor">
+
+    <!-- ===================== MENU 2: WHERE WE LIVE ===================== -->
+    <article id="onde-vivemos" class="caixa">
+        <h2 class="titulo2">My City</h2>
+
+        <section id="integrante-3-local" class="caixa">
+            <h3 class="titulo3">Nicolas da Luz Almeida Bicudo</h3>
+
+            <section id="integrante-3-municipio" class="caixa">
+                <h4 class="titulo4">Palotina</h4>
+
+                <p class="texto">Here are some facts about Palotina:</p>
+
+                <div style="padding: 7px;">
+                    <ul>
+                        <li>The settlement began as a district called Vila Palotina, established in 1954 and administered by the municipality of Guaíra.</li>
+
+                        <li>Nearby, there was Vila Maripá, which was joined with Vila Palotina to form the new municipality. Maripá was the colonization company that also helped settle Toledo and other cities in the region.</li>
+
+                        <li>Palotina became an independent municipality through State Law No. 4,245, dated July 25, 1960.</li>
+
+                        <li>The colonization process was a partnership between a company and the Church: the colonization company formed a partnership with the Pallottine Fathers. The priests came from Rio Grande do Sul and helped attract settlers to the region.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="integrante-3-bairro-linha" class="caixa">
+                <h4 class="titulo4">União Neighborhood</h4>
+
+                <p class="texto">
+                    I have lived in the União neighborhood since 2017. It is a quiet neighborhood, and there aren't many accidents. It is close to downtown (just like almost everything in this city), and I think it is a great neighborhood.
+                </p>
+            </section>
+        </section>
+    </article>
+
+    <hr class="divisor">
+
+    <!-- ===================== MENU 3: VIDEO ===================== -->
+    <article id="tcts" class="caixa" style="text-align: center;">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/NtjASyaznnI"
+            title="YouTube video"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+        <div class="layout">
+            <section id="cronica" class="texto cronica">
+
+                <h3 class="titulo texto">Short Story: The Boy on the Bus</h3>
+
+                <p><em>By Bryan Douglas Machado Chaves</em></p>
+
+                <p>
+                    Mr. Osvaldo has been driving the bus for 22 years and swears he knows all of Toledo just by the sounds his passengers make. But on that October morning, something was different.
+                </p>
+
+                <p>
+                    Every day, at around seven in the morning, an eleven-year-old boy would get on the bus, carrying a backpack bigger than himself with a few wires sticking out of it. He would sit at the front, right behind the driver, and fiddle with a little board, his tongue sticking out in concentration.
+                </p>
+
+                <p>— What have you got there, young man?</p>
+
+                <p>— A robot, Mr. Osvaldo. It doesn't walk yet. But it will.</p>
+
+                <p>— And who taught you that?</p>
+
+                <p>— School. In the morning, we have regular classes, and in the afternoon, we go to the lab.</p>
+
+                <p>
+                    Mr. Osvaldo laughed, thinking it was just a child's exaggeration. But the boy was right: in 2026, 150 students from the state school system with high abilities attend Colégio Donaduzzi. They follow the regular curriculum in the morning and take part in research, robotics, and science activities in the afternoon. It all takes place inside Biopark, which is home to around 170 companies and has just celebrated its tenth anniversary. Mr. Osvaldo remembered that when he first started driving that route, the area was nothing but overgrown land and dirt roads. Nobody talked about laboratories, let alone robots.
+                </p>
+
+                <p>At the last stop, the boy hurried off, his backpack bouncing on his back.</p>
+
+                <p>— Bye, Mr. Osvaldo! Next week, I'll bring it walking!</p>
+
+                <p>
+                    The driver watched the boy until he disappeared from view. Then he adjusted the rearview mirror, gave a slight smile, and thought, almost without meaning to: “For 22 years, I've been taking people into the future, and I didn't even know it.”
+                </p>
+
+                <p>He shifted into first gear and headed back to the starting point. There were more people waiting.</p>
+
+            </section>
+
+            <img src="motorista.jpg" alt="Bus driver" style="border-radius: 13px;">
+        </div>
+    </article>
+
+</main>
+
+<hr class="divisor">
+
+<footer id="creditos" class="caixa rodape">
+    <section>
+        <h2 class="titulo2"></h2>
+        <p class="texto">
+            <br>
+            <br>
+            <br>
+        </p>
+    </section>
+
+    <nav>
+        <h2 class="titulo2"></h2>
+        <ul class="menu">
+            <li class="item-menu"><a class="link" href="#sobre-nos">About Me</a></li>
+            <li class="item-menu"><a class="link" href="#onde-vivemos">Where I Live</a></li>
+            <li class="item-menu"><a class="link" href="#tcts">Video</a></li>
+            <li class="item-menu"><a class="link" href="#creditos">Credits</a></li>
+            <li class="item-menu"><a class="link" href="#cronica">Short Story</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script>
+(function () {
+    var raiz = document.documentElement;
+    var botao = document.getElementById('botao-tema');
+
+    // Restore the saved theme
+    try {
+        if (localStorage.getItem('tema') === 'escuro') {
+            raiz.setAttribute('data-tema', 'escuro');
+        }
+    } catch (erro) {}
+
+    if (!botao) return;
+
+    function atualizar() {
+        var escuro = raiz.getAttribute('data-tema') === 'escuro';
+        botao.textContent = escuro ? '☀️ Light Theme' : '🌙 Dark Theme';
+        botao.setAttribute('aria-pressed', escuro);
+    }
+
+    botao.addEventListener('click', function () {
+        var escuro = raiz.getAttribute('data-tema') === 'escuro';
+
+        if (escuro) {
+            raiz.removeAttribute('data-tema');
+        } else {
+            raiz.setAttribute('data-tema', 'escuro');
+        }
+
+        try {
+            localStorage.setItem('tema', escuro ? 'claro' : 'escuro');
+        } catch (erro) {}
+
+        atualizar();
+    });
+
+    atualizar();
+})();
+</script>
+</body>
+</html>
