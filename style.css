@@ -1,19 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-    margin: 20px;
+/* ===================== Paleta ===================== */
+:root {
+    --laranja: #ff7a00;
+    --laranja-escuro: #d96500;
+    --laranja-claro: #ffffff;
+    --preto: #111111;
+    --cinza-escuro: #2a2a2a;
+    --branco: #ffffff;
+    --fundo: #ffffff;
+}
+
+* {
+    margin: 0;
     padding: 0;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+/* ===================== Cabeçalho ===================== */
+header {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--laranja);
+}
+
+header h1 {
+    color: var(--laranja);
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    display: block;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: var(--laranja);
+    color: var(--preto);
+}
+
+/* Menu suspenso */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background: var(--cinza-escuro);
+    border-top: 3px solid var(--laranja);
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: var(--laranja);
+    color: var(--preto);
 }
 
 /* ===================== Títulos ===================== */
 .titulo1 {
     font-size: 38px;
     text-align: center;
-    color: black;
+    color: var(--preto);
     margin: 20px 0;
     padding: 10px;
 }
@@ -21,15 +100,17 @@ body {
 .titulo2 {
     font-size: 30px;
     text-align: center;
-    color: blue;
+    color: var(--laranja);
     margin: 18px 0;
     padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .titulo3 {
     font-size: 24px;
     text-align: center;
-    color: black;
+    color: var(--preto);
     margin: 16px 0;
     padding: 6px;
 }
@@ -37,7 +118,7 @@ body {
 .titulo4 {
     font-size: 20px;
     text-align: center;
-    color: blue;
+    color: var(--laranja);
     margin: 14px 0;
     padding: 4px;
 }
@@ -46,31 +127,42 @@ body {
 .texto {
     font-size: 16px;
     text-align: justify;
-    color: black;
+    color: var(--preto);
     margin: 10px 0;
     padding: 5px;
 }
 
 /* ===================== Estrutura geral (caixas com borda) ===================== */
 .caixa {
-    border: 2px solid red;
+    background: var(--branco);
+    border: 2px solid var(--laranja);
+    border-radius: 8px;
     margin: 15px;
     padding: 15px;
 }
 
+/* Caixas dentro de caixas: fundo levemente alaranjado para dar profundidade */
+.caixa .caixa {
+    background: var(--laranja-claro);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
 .divisor {
-    border: 1px solid red;
+    border: none;
+    height: 4px;
+    background: var(--preto);
     margin: 20px 0;
 }
 
 /* ===================== Links ===================== */
 .link {
-    color: blue;
+    color: var(--laranja-escuro);
     text-decoration: none;
+    font-weight: 700;
 }
 
 .link:hover {
-    color: black;
+    color: var(--preto);
     text-decoration: underline;
 }
 
@@ -90,14 +182,16 @@ body {
 
 /* ===================== Figuras / Carrossel ===================== */
 .figura {
-    border: 2px solid red;
+    background: var(--branco);
+    border: 2px solid var(--laranja);
+    border-radius: 8px;
     margin: 15px auto;
     padding: 10px;
     text-align: center;
 }
 
 .legenda {
-    color: black;
+    color: var(--preto);
     margin-top: 8px;
     padding: 5px;
     text-align: center;
@@ -111,4 +205,194 @@ body {
 /* ===================== Rodapé ===================== */
 .rodape {
     text-align: center;
+    background: var(--preto);
+    color: var(--branco);
+    border: 2px solid var(--laranja);
+}
+
+.rodape .titulo2 {
+    color: var(--laranja);
+}
+
+.rodape .texto {
+    color: var(--branco);
+}
+
+.rodape .link {
+    color: var(--laranja);
+}
+
+.rodape .link:hover {
+    color: var(--branco);
+}
+
+/* ===================== Carrossel ===================== */
+.galeria {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--branco);
+    border-radius: 6px;
+}
+
+.galeria img {
+    flex: 0 0 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    scroll-snap-align: center;
+}
+
+.controles {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botao-carrossel {
+    background: var(--laranja);
+    color: var(--preto);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao-carrossel:hover {
+    background: var(--preto);
+    color: var(--laranja);
+/* ===================== Crônica ===================== */
+}
+.cronica{
+  
+   width: 50vw;             
+  border: 2px solid #d96500;  
+  box-sizing: border-box;
+  margin-right: auto;  
+  padding: 10px;
+  border-radius: 13px;   
+}
+.layout {
+  display: flex; /* Ativa o Flexbox e coloca os itens lado a lado */
+}
+
+.layout > img {
+  flex: 1;           /* Faz a imagem ocupar todo o espaço restante */
+  width: 0;          /* Obrigatório no Flex para a imagem encolher e não estourar a tela */
+  object-fit: cover; /* Preenche o espaço sem distorcer a foto */
+  display: block;    /* Evita margem extra na parte de baixo da imagem */
+}
+
+.layout > section {
+  width: 50vw;             /* Sua section com metade da tela */
+  border: 2px solid #ff7a00;  /* Borda de 2px */
+  box-sizing: border-box; 
+}
+
+/* ===================== Botão de Tema ===================== */
+
+#botao-tema {
+    background: var(--laranja);
+    color: var(--preto);
+    border: 2px solid var(--laranja);
+    border-radius: 5px;
+    padding: 12px 16px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#botao-tema:hover {
+    background: var(--preto);
+    color: var(--laranja);
+}
+/* BOTÃO DE TEMA */
+
+#botao-tema {
+    background: var(--laranja);
+    color: var(--preto);
+    border: 2px solid var(--laranja);
+    border-radius: 5px;
+    padding: 12px 16px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botao-tema:hover {
+    background: var(--preto);
+    color: var(--laranja);
+}
+
+/* TEMA ESCURO */
+
+:root[data-tema="escuro"] body {
+    background: #121212;
+    color: #eeeeee;
+}
+
+:root[data-tema="escuro"] .caixa {
+    background: #1e1e1e;
+    color: #eeeeee;
+}
+
+:root[data-tema="escuro"] .caixa .caixa {
+    background: #292929;
+}
+
+:root[data-tema="escuro"] .titulo1,
+:root[data-tema="escuro"] .titulo3 {
+    color: #ffffff;
+}
+
+:root[data-tema="escuro"] .titulo2,
+:root[data-tema="escuro"] .titulo4 {
+    color: var(--laranja);
+}
+
+:root[data-tema="escuro"] .texto,
+:root[data-tema="escuro"] .legenda,
+:root[data-tema="escuro"] .cronica {
+    color: #eeeeee;
+}
+
+:root[data-tema="escuro"] .figura,
+:root[data-tema="escuro"] .galeria {
+    background: #292929;
+}
+
+:root[data-tema="escuro"] .divisor {
+    background: var(--laranja);
+}
+
+:root[data-tema="escuro"] .link {
+    color: #ff9633;
+}
+
+:root[data-tema="escuro"] .rodape {
+    background: #080808;
+    color: #ffffff;
+}
+
+:root[data-tema="escuro"] .rodape .texto {
+    color: #ffffff;
+}
+
+:root[data-tema="escuro"] #botao-tema {
+    background: #292929;
+    color: var(--laranja);
+}
+
+:root[data-tema="escuro"] #botao-tema:hover {
+    background: var(--laranja);
+    color: #111111;
 }
