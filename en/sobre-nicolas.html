@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="js/nicolas.js"></script>
 </head>
 
 <body>
@@ -12,15 +13,15 @@
     <h1>Nicolas</h1>
 
     <nav>
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
 
         <div class="dropdown">
             <a href="#" class="dropbtn">About Us ▾</a>
 
             <div class="dropdown-content">
-                <a href="sobre-nicolas.html">Nicolas</a>
-                <a href="sobre-bryan.html">Bryan</a>
-                <a href="sobre-vinicius.html">Vinicius</a>
+                <a href="../html/sobre-nicolas.html">Nicolas</a>
+                <a href="../html/sobre-bryan.html">Bryan</a>
+                <a href="../html/sobre-vinicius.html">Vinicius</a>
             </div>
         </div>
 
@@ -33,13 +34,6 @@
 </header>
 
 <hr class="divisor">
-
-<script>
-    function moverCarrossel(id, direcao) {
-        const galeria = document.getElementById(id);
-        galeria.scrollBy({ left: direcao * galeria.clientWidth, behavior: 'smooth' });
-    }
-</script>
 
 <!-- Main navigation menu: links to the 3 sections (technical requirement: functional navigation) -->
 <nav class="caixa">
@@ -59,8 +53,6 @@
         <h2 class="titulo2">About Me</h2>
 
         <section id="integrante-3" class="caixa">
-            <h3 class="titulo3">Nicolas Da Luz Almeida Bicudo</h3>
-
             <section id="integrante-3-nascimento" class="caixa">
                 <h4 class="titulo4">Birth</h4>
 
@@ -182,7 +174,6 @@
         <h2 class="titulo2">My City</h2>
 
         <section id="integrante-3-local" class="caixa">
-            <h3 class="titulo3">Nicolas da Luz Almeida Bicudo</h3>
 
             <section id="integrante-3-municipio" class="caixa">
                 <h4 class="titulo4">Palotina</h4>
@@ -230,7 +221,7 @@
 
                 <h3 class="titulo texto">Short Story: The Boy on the Bus</h3>
 
-                <p><em>By Bryan Douglas Machado Chaves</em></p>
+                <p><em>By Bryan Douglas Machado Chaves, Nicolas da Luz Almeida Bicudo and Vinicius Francisco Caramel</em></p>
 
                 <p>
                     Mr. Osvaldo has been driving the bus for 22 years and swears he knows all of Toledo just by the sounds his passengers make. But on that October morning, something was different.
@@ -294,44 +285,6 @@
     </nav>
 </footer>
 
-<script>
-(function () {
-    var raiz = document.documentElement;
-    var botao = document.getElementById('botao-tema');
 
-    // Restore the saved theme
-    try {
-        if (localStorage.getItem('tema') === 'escuro') {
-            raiz.setAttribute('data-tema', 'escuro');
-        }
-    } catch (erro) {}
-
-    if (!botao) return;
-
-    function atualizar() {
-        var escuro = raiz.getAttribute('data-tema') === 'escuro';
-        botao.textContent = escuro ? '☀️ Light Theme' : '🌙 Dark Theme';
-        botao.setAttribute('aria-pressed', escuro);
-    }
-
-    botao.addEventListener('click', function () {
-        var escuro = raiz.getAttribute('data-tema') === 'escuro';
-
-        if (escuro) {
-            raiz.removeAttribute('data-tema');
-        } else {
-            raiz.setAttribute('data-tema', 'escuro');
-        }
-
-        try {
-            localStorage.setItem('tema', escuro ? 'claro' : 'escuro');
-        } catch (erro) {}
-
-        atualizar();
-    });
-
-    atualizar();
-})();
-</script>
 </body>
 </html>
