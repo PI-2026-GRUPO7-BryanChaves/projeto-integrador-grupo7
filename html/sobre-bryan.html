@@ -7,6 +7,7 @@
     <title>Sobre Mim — Bryan Douglas Machado Chaves</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/tema.js"></script>
+    <script src="../js/nicolas.js"></script>
 </head>
 
 <body>
@@ -34,10 +35,6 @@
                 <a class="link" href="#tcts">TCTs</a>
             <li class="item-menu">
                 <a class="link" href="#cronica">Crônica</a>
-            </li>
-            </li>
-            <li class="item-menu">
-                <a class="link" href="#creditos">Créditos</a>
             </li>
             <li class="item-menu">
                 <a class="link" href="../en/sobre-bryan.html" lang="en" hreflang="en">English</a>
@@ -184,14 +181,21 @@
 
             </section>
 
-            <div id="integrante-1-carrossel">
-
-                <figure class="figura">
-
-                    <figcaption class="legenda"></figcaption>
-                </figure>
-
-            </div>
+           <div id="integrante-3-carrossel" class="caixa">
+                    <figure class="figura">
+                        <div class="galeria" id="galeria-3">
+                            <img src="../img/hospital.jpg" alt="Hospital">
+                            <img src="../img/ifpr.png" alt="IFPR">
+                            <img src="../img/estudo.jpg" alt="Computador">
+                            <img src="../img/ime-logo.jpg" alt="IME">
+                            <img src="../img/ita.jpg" alt="ITA">
+                        </div>
+                    </figure>
+                    <div class="controles">
+                        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', -1)" aria-label="Imagem anterior">&#10094;</button>
+                        <button type="button" class="botao-carrossel" onclick="moverCarrossel('galeria-3', 1)" aria-label="Próxima imagem">&#10095;</button>
+                    </div>
+                </div>
 
         </article>
 
@@ -304,17 +308,24 @@
 
             </section>
 
-            <section id="tct-videos" class="texto">
+            <section id="tct-videos" class="texto flex-container">
 
                 <h3 class="titulo texto">Vídeos</h3>
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/AUeF9rRIs2E"
+    title="Vídeo do YouTube 1"
+    allowfullscreen>
+</iframe>
 
-                <ul>
-                    <li>
-
-                        <a class="link" href=""></a>
-                    </li>
-                </ul>
-
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/Cg8rHPhPLSk"
+    title="Vídeo do YouTube 2"
+    allowfullscreen>
+</iframe>
             </section>
 
             <section id="cronica" class="texto">
@@ -372,14 +383,6 @@
     <hr class="divisor">
 
     <footer id="creditos" class="rodape texto">
-
-        <h2 class="titulo texto">Créditos</h2>
-
-        <p>
-            Bryan Douglas Machado Chaves<br>
-            Instituto Federal do Paraná (IFPR)<br>
-        </p>
-
         <nav class="texto" aria-label="Menu do rodapé">
 
             <h2 class="titulo texto">Menu</h2>
@@ -398,9 +401,6 @@
                     <a class="link" href="#tcts">TCTs</a>
                 </li>
 
-                <li class="item-menu">
-                    <a class="link" href="#creditos">Créditos</a>
-                </li>
 
             </ul>
 
